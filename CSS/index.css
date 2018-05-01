@@ -55,7 +55,7 @@ header {
     padding-top: 22px;
     margin: 0 auto;
 
-    font-family: 'PressStart-Regular';
+    font-family: PressStart-Regular;
     font-size: 26px;
     text-align: center;
     color: #fefe00;
@@ -82,7 +82,7 @@ header li {
 nav select {
     height: 40px;
     width: 200px;
-    font-family: 'VT323-Regular';
+    font-family: VT323-Regular;
     font-size: 24px;
 
     background-color: #8e908f;
@@ -99,7 +99,7 @@ nav select:first-child option:nth-child(1)::after {
 nav button {
     height: 40px;
     width: 200px;
-    font-family: 'VT323-Regular';
+    font-family: VT323-Regular;
     font-size: 32px;
 
     background-color: #8e908f;
@@ -154,7 +154,7 @@ div {
     padding: 0;
     margin: 0;
 
-    font-family: 'VT323-Regular';
+    font-family: VT323-Regular;
     font-size: 16px;
     color: white;
 }
@@ -175,7 +175,7 @@ div {
     padding: 0;
     margin: 0;
 
-    font-family: 'VT323-Regular';
+    font-family: VT323-Regular;
     font-size: 16px;
     color: white;
     text-align: right;
