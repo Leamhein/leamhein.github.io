@@ -1,15 +1,19 @@
 @font-face {
     font-family: 'PressStart-Regular';
-    font-weight: 400;
+    src: url('../Fonts/pressstart2p-regular-webfont.woff2') format('woff2'),
+    url('../Fonts/pressstart2p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-    src: url('../fonts/PressStart2P-Regular.ttf');
 }
 
 @font-face {
     font-family: 'VT323-Regular';
-    font-weight: 400;
+    src: url('../Fonts/vt323-regular-webfont.woff2') format('woff2'),
+    url('../Fonts/vt323-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-    src: url('../fonts/VT323-Regular.ttf');
 }
 
 body {
