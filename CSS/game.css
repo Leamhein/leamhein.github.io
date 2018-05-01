@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'PressStart-Regular';
+    font-weight: 400;
+
+    src: url('../fonts/PressStart2P-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'VT323-Regular';
+    font-weight: 400;
+
+    src: url('../fonts/VT323-Regular.ttf');
+}
+
+body {
+    width: 1100px;
+    height: calc(100vh - 175px);
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'VT323-Regular';
+    font-size: 26px;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.memory_board {
+    background: #606d7d;
+    border: 2px solid black;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.cards {
+    background-image: url(../Images/card_shirts.png);
+    background-size: cover;
+    width: 109px;
+    height: 150px;
+    display: inline-block;
+    margin: 7px;
+    /*padding: 5px;*/
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: 1s ease-out;
+    z-index: 2;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-face {
+    height: 100%;
+    width: 100%;
+    background: #111;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    line-height: 150px;
+}
+
+.timer {
+    width: 190px;
+    height: 50px;
+    margin: 10px auto;
+
+    background: #2d3945;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.time {
+    width: 50px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+
+    font-family: 'VT323-Regular';
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.divider {
+    width: 20px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+
+    font-family: 'VT323-Regular';
+    font-size: 50px;
+    line-height: 50px;
+}
