@@ -48,7 +48,6 @@ body {
     height: 150px;
     display: inline-block;
     margin: 7px;
-    /*padding: 5px;*/
     font-size: 64px;
     cursor: pointer;
     text-align: center;
@@ -70,10 +69,12 @@ body {
 .card-face {
     height: 100%;
     width: 100%;
-    background: #111;
+    background-image: url(../Images/card_faces.png);
+    background-size: cover;
     backface-visibility: hidden;
     transform: rotateY(180deg);
     line-height: 150px;
+    color: white;
 }
 
 .timer {

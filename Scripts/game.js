@@ -3,7 +3,8 @@ let hard = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G'
     low = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D'],
     memory_array = [],
     cards_flipped = 0,
-    card_shirt;
+    card_shirt,
+    card_face;
 
 window.onload = newBoard;
 
@@ -45,13 +46,14 @@ function newBoard() {
     //choose cards shirts
     switch (localStorage.getItem('card_shirt')) {
         case 'first':
-            card_shirt = '';
             break;
         case 'second':
             card_shirt = 'style="background-position: 548px"';
+            card_face = 'style="background-position: 548px"';
             break;
         case 'third':
             card_shirt = 'style="background-position: -549px"';
+            card_face = 'style="background-position: -549px"';
             break;
         case null:
             card_shirt = '';
@@ -60,7 +62,7 @@ function newBoard() {
     //create every card
     (function (array) {
         for (let i = 0, length = array.length; i < length; i++) {
-            output += `<div id="card_${i} ${array[i]}" class="cards" ${card_shirt}><div class="card-face">${array[i]}</div></div>`;
+            output += `<div id="card_${i} ${array[i]}" class="cards" ${card_shirt}><div class="card-face" ${card_face}>${array[i]}</div></div>`;
         };
     })(memory_array);
 
