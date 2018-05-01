@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memmory Game</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="Scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_logo">
+                <a href="index.html">
+                    <h1>Match Match Game</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <form>
+                            <select id="card_shirt">
+                                <option value disabled selected hidden>Card Type</option>
+                                <option value="1">First card shirt</option>
+                                <option value="2">Second card shirt</option>
+                                <option value="3">Third card shirt</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form>
+                            <select id="difficult">
+                                <option value disabled selected hidden>Game Difficulty</option>
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>Hard</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="">
+                            <button>
+                                <a href="game.html" target="content">New Game</a>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main-window">
+            <div class="container">
+                <iframe allow-scripts src="main.html" scrolling="no" name="content">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="info">
+            <p>Game by Vladimir Apenko</p>
+            <p>for Rolling Scopes School</p>
+        </div>
+        <div class="social">
+            <a href="mailto:leamhein@hotmail.com?subject=Match-Match Game"></a>
+            <a href="https://www.linkedin.com/in/leamhain/?locale=en_US"></a>
+            <a href="https://www.facebook.com/Leamhain"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
